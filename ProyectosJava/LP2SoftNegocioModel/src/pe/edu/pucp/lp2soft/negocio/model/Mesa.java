@@ -1,6 +1,6 @@
 package pe.edu.pucp.lp2soft.negocio.model;
 
-class Mesa{
+public class Mesa{
     private int idMesa; 
     private int estado ; 
     private int numero ;

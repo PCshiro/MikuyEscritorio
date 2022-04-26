@@ -14,6 +14,8 @@ public class DBManager {
         try{
             //Registramos el Driver de conexion
             Class.forName("com.mysql.cj.jdbc.Driver");
+            
+            //establecemos la conexion
             con = DriverManager.getConnection(url, user,password);
         }catch(Exception ex){
             System.out.println(ex.getMessage());

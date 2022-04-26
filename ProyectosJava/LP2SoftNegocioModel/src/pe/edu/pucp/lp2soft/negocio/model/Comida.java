@@ -1,0 +1,19 @@
+package pe.edu.pucp.lp2soft.negocio.model;
+
+public class Comida extends Producto{
+    private int idComida;
+    //private Tipo_Comida tipo_comida;
+
+    public Comida(String nombre, boolean estado, float precio, String descripcion) {
+        super(nombre, estado, precio, descripcion);
+    }
+
+    public int getIdComida() {
+        return idComida;
+    }
+
+    public void setIdComida(int idComida) {
+        this.idComida = idComida;
+    }
+    
+}

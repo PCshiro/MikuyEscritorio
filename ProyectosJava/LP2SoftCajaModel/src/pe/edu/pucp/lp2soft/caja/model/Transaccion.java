@@ -2,7 +2,7 @@ package pe.edu.pucp.lp2soft.caja.model;
 
 import java.util.Date;
 
-class Transaccion {
+public class Transaccion {
     private int id_transaccion;
     private float monto;
     private Date fecha;
@@ -10,7 +10,8 @@ class Transaccion {
     private Gasto gasto;
     private Pedido pedido;
     private String decripcion; 
-
+    //deberia tener 1 resturante 
+    
     //SETTERS Y GETTERS  ---------------------------------------
     public int getId_transaccion() {
 		return id_transaccion;

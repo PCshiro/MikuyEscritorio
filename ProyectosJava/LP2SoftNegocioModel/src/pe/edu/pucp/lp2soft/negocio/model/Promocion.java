@@ -2,7 +2,7 @@ package pe.edu.pucp.lp2soft.negocio.model;
 
 import java.util.ArrayList;
 
-class Promocion extends ItemVendible{
+public class Promocion extends ItemVendible{
     private int id_promocion;
     private ArrayList<LineaPromocion> lista_de_Comidas;//Incluye
 

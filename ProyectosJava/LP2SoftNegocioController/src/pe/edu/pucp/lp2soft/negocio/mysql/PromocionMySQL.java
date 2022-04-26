@@ -23,6 +23,11 @@ public class PromocionMySQL implements PromocionDAO{
     private CallableStatement cs;
     private ResultSet rs;
 
+    /* private int idItemVendible;
+    private String nombre;
+    private boolean estado; 
+    private double precio;
+    private String descripcion;*/
     @Override
     public int insertar(Promocion promocion) {
         int resultado = 0;
@@ -31,13 +36,13 @@ public class PromocionMySQL implements PromocionDAO{
             cs = con.prepareCall("{call INSERTAR_PROMOCION(?,?,?,?,?)}");
             cs.registerOutParameter("_id_comida", java.sql.Types.INTEGER);
             cs.setString("_nombre", promocion.getNombre());
-            cs.setDouble("_precio", comida.getPrecio());
-            cs.setString("_descripcion", comida.getDescripcion());
-            cs.setBoolean("_descripcion", comida.isEstado());
+            cs.setDouble("_precio", promocion.getPrecio());
+            cs.setString("_descripcion", promocion.getDescripcion());
+            cs.setBoolean("_estado", promocion.isEstado());
             cs.executeUpdate();
-            comida.setIdComida(cs.getInt("_id_area"));
-            comida.setIdItemVendible(cs.getInt("_id_area"));
-            comida.setIdProducto(cs.getInt("_id_area"));
+            promocion.setId_promocion(cs.getInt("_id_area"));
+            promocion.setIdItemVendible(cs.getInt("_id_area"));
+            
             resultado = 1;
         }catch(Exception ex){
             System.out.println(ex.getMessage());

@@ -5,15 +5,17 @@ public class ItemVendible {
     private int idItemVendible;
     private String nombre;
     private boolean estado; 
-    private float precio;
+    private double precio;
     private String descripcion;
 
-    public ItemVendible(String nombre, boolean estado, float precio, String descripcion) {
+    public ItemVendible(String nombre, boolean estado, double precio, String descripcion) {
         this.nombre = nombre;
         this.estado = estado;
         this.precio = precio;
         this.descripcion = descripcion;
     }
+    
+    public ItemVendible(){};
     
     public int getIdItemVendible() {
         return idItemVendible;
@@ -39,11 +41,11 @@ public class ItemVendible {
         this.estado = estado;
     }
 
-    public float getPrecio() {
+    public double getPrecio() {
         return precio;
     }
 
-    public void setPrecio(float precio) {
+    public void setPrecio(double precio) {
         this.precio = precio;
     }
 

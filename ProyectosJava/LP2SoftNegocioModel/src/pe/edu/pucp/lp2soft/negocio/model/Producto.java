@@ -4,9 +4,11 @@ public class Producto extends ItemVendible{
     private int idProducto;
     //private ArrayList<LineaPromocion> combosDisponibles;//incluidoEn
 
-    public Producto(String nombre, boolean estado, float precio, String descripcion) {
+    public Producto(String nombre, boolean estado, double precio, String descripcion) {
         super(nombre, estado, precio, descripcion);
     }
+    
+    public Producto(){};
 
     public int getIdProducto() {
         return idProducto;

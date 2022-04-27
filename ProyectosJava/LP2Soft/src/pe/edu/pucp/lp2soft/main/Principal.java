@@ -18,7 +18,6 @@ import pe.edu.pucp.lp2soft.usuario.model.Restaurante;
 import pe.edu.pucp.lp2soft.usuario.model.Rol;
 import pe.edu.pucp.lp2soft.usuario.model.Usuario;
 
-
 /**
  *
  * Axel Romero (20172469)

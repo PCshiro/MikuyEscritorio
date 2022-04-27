@@ -20,7 +20,7 @@ import pe.edu.pucp.lp2soft.usuario.model.Usuario;
 
 /**
  *
- * Axel Romero (20172469)
+ * 
  */
 public class Principal {
     public static void main(String[] args) {

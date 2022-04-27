@@ -1,3 +1,19 @@
+DROP TABLE IF EXISTS asistencia ;
+DROP TABLE IF EXISTS categoria ;
+DROP TABLE IF EXISTS gasto ;
+DROP TABLE IF EXISTS item_vendible ;
+DROP TABLE IF EXISTS linea_pedido ;
+DROP TABLE IF EXISTS linea_promocion ;
+DROP TABLE IF EXISTS mesa ;
+DROP TABLE IF EXISTS pedido ;
+DROP TABLE IF EXISTS persona ;
+DROP TABLE IF EXISTS producto ;
+DROP TABLE IF EXISTS promocion ;
+DROP TABLE IF EXISTS restaurante ;
+DROP TABLE IF EXISTS rol ;
+DROP TABLE IF EXISTS tipo_pago ;
+DROP TABLE IF EXISTS trasaccion ;
+DROP TABLE IF EXISTS usuario ;
 -- -----------------------------------------------------
 -- Table rol
 -- -----------------------------------------------------
@@ -12,9 +28,9 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE restaurante (
   id_restaurante INT NOT NULL AUTO_INCREMENT,
-  ruc INT NULL DEFAULT NULL,
+  ruc VARCHAR(20) NULL DEFAULT NULL,
   nombre VARCHAR(120) NULL DEFAULT NULL,
-  telefono INT NULL DEFAULT NULL,
+  telefono VARCHAR(20) NULL DEFAULT NULL,
   direccion VARCHAR(120) NULL DEFAULT NULL,
   dineroActual DECIMAL(10,2) NULL DEFAULT NULL,
   PRIMARY KEY (id_restaurante))
@@ -49,7 +65,7 @@ CREATE TABLE usuario (
   estado TINYINT NULL DEFAULT NULL,
   imagen LONGBLOB NULL DEFAULT NULL,
   salario DECIMAL(10,2) NULL DEFAULT NULL,
-  telefono INT NULL,
+  telefono VARCHAR(20) NULL,
   PRIMARY KEY (id_usuario),
   INDEX fid_rol (fid_rol ASC) VISIBLE,
   INDEX fid_restaurante (fid_restaurante ASC) VISIBLE,

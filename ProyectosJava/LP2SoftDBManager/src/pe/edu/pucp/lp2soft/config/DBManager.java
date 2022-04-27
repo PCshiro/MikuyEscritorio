@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 public class DBManager {
     private static DBManager dbManager;
     private String url = "jdbc:mysql://database-ta.cdae0cnqvkjt.us-east-1.rds.amazonaws.com:3306/Restaurante";
-    private String user = "admin1";
+    private String user = "Axel";
     private String password = "Java12Sup34.";
     private Connection con;
     

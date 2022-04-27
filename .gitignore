@@ -21,3 +21,18 @@
 
 /ProyectosJava/LP2SoftNegocioController/nbproject/private/
 /ProyectosJava/LP2SoftDBManager/nbproject/private/
+/ProyectosJava/LP2Soft/nbproject/private/
+/ProyectosJava/LP2SoftUserController/nbproject/private/
+!/ProyectosJava/LP2SoftUserController/src/pe/edu/pucp/lp2soft/user/lib/mysql-connector-java-8.0.28.jar
+/ProyectosJava/LP2SoftUserController/build/
+/ProyectosJava/LP2SoftDBManager/build/
+/ProyectosJava/LP2Soft/build/
+/ProyectosJava/LP2SoftUserModel/dist/
+/ProyectosJava/LP2SoftUserModel/build/
+/ProyectosJava/LP2SoftDBManager/dist/
+/ProyectosJava/LP2SoftUserController/dist/
+/ProyectosJava/LP2Soft/dist/
+/ProyectosJava/LP2SoftNegocioModel/build/
+/ProyectosJava/LP2SoftNegocioModel/dist/
+/ProyectosJava/LP2SoftNegocioController/build/
+/ProyectosJava/LP2SoftNegocioController/dist/

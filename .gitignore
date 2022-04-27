@@ -36,3 +36,10 @@
 /ProyectosJava/LP2SoftNegocioModel/dist/
 /ProyectosJava/LP2SoftNegocioController/build/
 /ProyectosJava/LP2SoftNegocioController/dist/
+!/ProyectosJava/mysql-connector-java-8.0.28.jar
+
+#Git ignore para trabajar proyectos de Visual Studio
+*.suo
+[Dd]ebug/
+[Rr]elease/
+*.exe
